@@ -1,0 +1,18 @@
+page-tabs {
+    font-family: 'SourceSansPro';
+    .tabs-md .tab-button-text {
+    	font-size: 1.4rem;
+    }
+    .tabs-md-primary .tab-button:hover:not(.disable-hover), 
+    .tabs-md-primary .tab-button[aria-selected=true], 
+    .tabs-md-primary .tab-button[aria-selected=true] .tab-button-icon 
+    {
+    	border-bottom: 3px solid #FFF;
+	}
+	.tabs-md .tab-button{
+		// padding:5px;
+	}
+	.tabbar{
+		padding-top:0.3em;
+	}
+}

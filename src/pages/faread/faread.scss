@@ -1,0 +1,46 @@
+page-faread {
+	// faread header
+	.faread-img{
+		position:absolute;
+		top:0;
+		left:0;
+		width : 100%;
+		height : 180px;
+		z-index:0;
+	}
+	.faread-header{
+		margin-top:0;
+		color: #FFF;
+	}
+	.faread-header h5, .faread-header h1{
+		margin:5px 0;
+	}
+	.faread-header h1{
+		font-size: 4rem;
+		font-weight:bold;
+	}
+	.faread-header img{
+		width:2.8rem;
+	}
+	// faread content
+	.faread-content{
+		margin-top:1.2em;
+	}
+	.faread-content col-4{
+		text-align:center;
+	}
+	.faread-content p{
+		font-size:1.4rem;
+	}
+	.faread-content img{
+		width:6rem;
+	}
+
+	// popular
+	.popular-header h4{
+		font-size:1.6rem;
+	}
+	.popular-header{
+		border:none;
+	}
+}
