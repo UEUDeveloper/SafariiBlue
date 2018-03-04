@@ -15,7 +15,7 @@
 
 <ion-content padding>
 	<!-- header background image -->
-	<img class="faread-img" src="../assets/imgs/bg6.jpg">
+	<img class="faread-img" src="assets/imgs/bg6.jpg">
 	<!-- end header background image -->
 
 	<!-- header content -->
@@ -36,16 +36,16 @@
 	<!-- main content -->
 	<ion-grid class="faread-content">
 		<ion-row>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/002-open-book.png">
+			<ion-col col-4 text-center (click)="gotoContentPage(1)">
+				<img src="assets/imgs/002-open-book.png">
 				<p text-center>Panduan Musafir</p>
 			</ion-col>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/prayer.png">
+			<ion-col col-4 text-center (click)="gotoContentPage(2)">
+				<img src="assets/imgs/prayer.png">
 				<p text-center>Doa Perjalanan</p>
 			</ion-col>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/001-quran.png">
+			<ion-col col-4 text-center (click)="gotoContentPage(3)">
+				<img src="assets/imgs/001-quran.png">
 				<p text-center>Fiqh & Dalil</p>
 			</ion-col>
 		</ion-row>

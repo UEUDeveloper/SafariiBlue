@@ -1,0 +1,55 @@
+page-jadwal-sholat {
+	ion-spinner{
+		height:4rem;
+		width:4rem;
+	}
+	// jadwal header
+	.jadwal-img{
+		position:absolute;
+		top:0;
+		left:0;
+		width : 100%;
+		height : 180px;
+		z-index:0;
+	}
+	.jadwal-header{
+		margin-top:0;
+		color: #000;
+	}
+	.jadwal-header h5, .jadwal-header h1, .jadwal-header p{
+		margin:5px 0;
+	}
+	.jadwal-header h1{
+		font-size: 4.5rem;
+		font-weight:bold;
+	}
+	.jadwal-header img{
+		width:2.8rem;
+	}
+
+	// jadwal nav
+	.jadwal-nav{
+		ion-icon{
+			font-size:3rem;
+		}
+		p{
+			margin:0;
+			color:#999;
+			font-size:1.4rem;	
+		}
+		h5{
+			margin:0;
+		}
+		border-bottom:1px solid #CCC;
+	}
+	// jadwal body
+	.jadwal-body{
+		h5{
+			margin-top:0.3em !important;
+			font-size:1.6rem;
+		}
+		.active{
+			background:#EEE;
+		}
+	}
+}

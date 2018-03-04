@@ -15,18 +15,18 @@
 
 <ion-content padding>
 	<!-- header background image -->
-	<img class="safar-img" src="../assets/imgs/bg1.jpg">
+	<img class="safar-img" src="assets/imgs/bg1.jpg">
 	<!-- end header background image -->
 
 	<!-- header content -->
 	<ion-grid class="safar-header">
 	  <ion-row>
 	    <ion-col col-12>
-	    	<p>Kota DKI Jakarta</p>
+	    	<p>{{namaKota}}</p>
 	    	<p><b>Jamak Takdim Zhuhur</b></p>
-	    	<h1 ion-text>14.50 WIB</h1>
-	    	<p><b>10 menit lagi tersisa untuk jamak</b></p>
-			<img src="../assets/imgs/speaker.png">
+	    	<h1>{{jam}}</h1>
+	    	<p id="sisawaktu"><b>10 menit lagi tersisa untuk jamak</b></p>
+			<img src="assets/imgs/speaker.png">
 		</ion-col>
 	  </ion-row>
 	</ion-grid>
@@ -35,26 +35,26 @@
 	<!-- main content -->
 	<ion-grid class="safar-content">
 		<ion-row>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/direction.png">
+			<ion-col col-4 text-center (click)="gotoPerjalanan()">
+				<img src="assets/imgs/direction.png">
 				<p text-center>Perjalanan</p>
 			</ion-col>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/nearby.png">
+			<ion-col col-4 text-center (click)="gotoNearby()">
+				<img src="assets/imgs/nearby.png">
 				<p text-center>Tempat Terdekat</p>
 			</ion-col>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/quality.png">
+			<ion-col col-4 text-center (click)="gotoPlaceRecomendation()">
+				<img src="assets/imgs/quality.png">
 				<p text-center>Rekomendasi Tempat</p>
 			</ion-col>
 		</ion-row>
 		<ion-row>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/002-safari.png">
+			<!-- <ion-col col-4 text-center (click)="gotoKiblat()">
+				<img src="assets/imgs/002-safari.png">
 				<p text-center>Kiblat</p>
-			</ion-col>
-			<ion-col col-4 text-center>
-				<img src="../assets/imgs/001-circular-clock.png">
+			</ion-col> -->
+			<ion-col col-4 text-center (click)="gotoJadwalSholat()">
+				<img src="assets/imgs/001-circular-clock.png">
 				<p text-center>Jadwal Sholat</p>
 			</ion-col>
 		</ion-row>
@@ -66,6 +66,10 @@
 		<h4 ion-text><b>Histori Perjalanan</b></h4>
 	</ion-item>
 	<ion-card>
+	  <ion-item>
+	    <h2>Lat  :<b>{{lat}}</b></h2>
+	    <h2>Long :<b>{{long}}</b></h2>
+	  </ion-item>
 	  <ion-item>
 	    <h2><b>Jakarta - Malang</b></h2>
 	    <p>Jamak Takdim Zhuhur</p>

@@ -1,0 +1,129 @@
+<!--
+  Generated template for the JadwalSholatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Jadwal Sholat</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<div *ngIf="!showPage">
+		<ion-item text-center no-lines>
+			<ion-spinner name="crescent" (click)="showTest()"></ion-spinner>
+		</ion-item>
+	</div>
+	<div *ngIf="showPage">
+		<!-- header background image -->
+		<img *ngIf="showHeader" class="jadwal-img" src="assets/imgs/bg5.jpg">
+		<!-- end header background image -->
+
+		<!-- header content -->
+		<ion-grid class="jadwal-header" *ngIf="showHeader">
+		  <ion-row>
+		    <ion-col col-12>
+		    	<h3 ion-text>Waktu Sholat {{namaKota}}</h3>
+		    	<h5>{{waktuSholatSekarang}}</h5>
+		    	<h1>{{jam}}</h1>
+		    	<h5 *ngIf="waktuSholatSelanjutnya!=''">Selanjutnya Masuk Waktu {{waktuSholatSelanjutnya}}</h5>
+		    	<br>
+			</ion-col>
+		  </ion-row>
+		</ion-grid>
+		<!-- end header content -->
+
+		<!-- Nav Content -->
+		<ion-grid class="jadwal-nav">
+			<ion-row *ngIf="showJadwal" >
+				<ion-col col-2>
+					<ion-icon (click)="prevDay()" name="arrow-back"></ion-icon>
+				</ion-col>
+				<ion-col col-8 text-center>
+					<h5><b>{{ tanggalSekarang }}</b></h5>
+					<p>{{hijri}}</p>
+				</ion-col>
+				<ion-col col-2  text-right>
+					<ion-icon (click)="nextDay()" name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+			<ion-row *ngIf="!showJadwal" >
+				<ion-col col-2>
+					<ion-icon (click)="prevDay()" name="arrow-back"></ion-icon>
+				</ion-col>
+				<ion-col col-8 text-center>
+					<h5><b>{{ tanggalChange }}</b></h5>
+					<p>{{hijri}}</p>
+				</ion-col>
+				<ion-col col-2  text-right>
+					<ion-icon (click)="nextDay()" name="arrow-forward"></ion-icon>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+		<!-- End Nav Content -->
+
+		<!-- Body Content -->
+		<ion-list class="jadwal-body" *ngIf="showJadwal" >
+			<ion-item [class.active]="waktuSholatSekarang == 'Shubuh'">
+				<h5>Shubuh</h5>
+				<h5 item-end>{{jadwalSholat.shubuh}}</h5>
+			</ion-item>
+			<ion-item [class.active]="waktuSholatSekarang == '-'">
+				<h5>Terbit</h5>
+				<h5 item-end>{{jadwalSholat.terbit}}</h5>
+			</ion-item>
+			<ion-item [class.active]="waktuSholatSekarang == 'Zhuhur'">
+				<h5>Zhuhur</h5>
+				<h5 item-end>{{jadwalSholat.zhuhur}}</h5>
+			</ion-item>
+			<ion-item [class.active]="waktuSholatSekarang == 'Ashar'">
+				<h5>Ashar</h5>
+				<h5 item-end>{{jadwalSholat.ashar}}</h5>
+			</ion-item>
+			<ion-item [class.active]="waktuSholatSekarang == 'Maghrib'">
+				<h5>Maghrib</h5>
+				<h5 item-end>{{jadwalSholat.maghrib}}</h5>
+			</ion-item>
+			<ion-item [class.active]="waktuSholatSekarang == 'Isya'">
+				<h5>Isya</h5>
+				<h5 item-end>{{jadwalSholat.isya}}</h5>
+			</ion-item>
+		</ion-list>
+
+		<ion-list class="jadwal-body" *ngIf="!showJadwal" >
+			<ion-item>
+				<h5>Shubuh</h5>
+				<h5 item-end>{{jadwalChange.shubuh}}</h5>
+			</ion-item>
+			<ion-item >
+				<h5>Terbit</h5>
+				<h5 item-end>{{jadwalChange.terbit}}</h5>
+			</ion-item>
+			<ion-item>
+				<h5>Zhuhur</h5>
+				<h5 item-end>{{jadwalChange.zhuhur}}</h5>
+			</ion-item>
+			<ion-item >
+				<h5>Ashar</h5>
+				<h5 item-end>{{jadwalChange.ashar}}</h5>
+			</ion-item>
+			<ion-item>
+				<h5>Maghrib</h5>
+				<h5 item-end>{{jadwalChange.maghrib}}</h5>
+			</ion-item>
+			<ion-item>
+				<h5>Isya</h5>
+				<h5 item-end>{{jadwalChange.isya}}</h5>
+			</ion-item>
+		</ion-list>
+		<!-- end Body Content -->
+	</div>
+
+	<div *ngIf="koneksiGagal" text-center>
+		<h5>Sambungan Ke Internet Tidak ada</h5>
+	</div>
+</ion-content>

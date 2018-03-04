@@ -1,0 +1,37 @@
+page-nearby {
+	.nearby-kategori{
+		ion-col{
+			i{
+				text-align:center;
+				display: inline;
+				color: map-get($colors, danger);
+				width:4rem;
+			}
+			[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+			[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+		        font-size: 4rem;
+				font-style: normal;
+				margin-left:0.3em;
+				text-align:center;
+			}
+			ion-card-content{
+				height:12.2rem;
+			}
+		}
+	}
+	.instan{
+		img{
+			width:5rem;
+			height:5rem;
+		}
+		ion-icon{
+			color:#CCC;
+		}
+		.rated{
+			color: map-get($colors, danger);
+		}
+		ion-note{
+			color:#999;
+		}
+	}
+}

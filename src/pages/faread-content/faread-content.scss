@@ -1,0 +1,18 @@
+page-faread-content {
+	.content-item{
+		ion-avatar{
+			img{
+				border-radius:0;
+			}
+		}
+		.rated{
+			color:map-get($colors, danger);
+		}
+		.booked{
+			color:map-get($colors, primary);
+		}
+		h2{
+			font-weight:bold;
+		}
+	}
+}

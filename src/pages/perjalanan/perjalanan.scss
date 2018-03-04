@@ -1,0 +1,63 @@
+page-perjalanan {
+	ion-content{
+		background:#F5F5F5 !important;
+	}
+	.perjalanan-layer-header{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:15.5rem;
+		background:#FFF;
+	}
+	.perjalanan-header{
+		text-align:center;
+		img{
+			width:10rem;
+		}
+		margin-bottom:0.8em;
+	}
+	.perjalanan-body{
+		margin-top:2rem;
+		width:100%;
+		img{
+			width:2rem;
+		}
+		ion-item{
+			background:#F5F5F5;
+		}
+		ion-input{
+			background:#FFF;
+			border: 1px solid #ccc;
+			border-radius:5px;
+			padding-left:5px;
+		}
+		.item-md .item-button{
+			text-transform:capitalize;
+			font-size:1.6rem !important;
+			padding:2rem 0.6rem;
+		}
+		.item-ios .item-button{
+			text-transform:capitalize;
+			font-size:1.6rem !important;
+			padding:2rem 0.6rem;
+		}
+	}
+	.perjalanan-result{
+		ion-card-title{
+			font-size:2rem;
+			font-weight:bold;
+		}
+		.item-md .item-button{
+			text-transform:capitalize;
+			font-size:1.6rem !important;
+			padding:2rem 0.6rem;
+		}
+		.item-ios .item-button{
+			text-transform:capitalize;
+			font-size:1.6rem !important;
+			padding:2rem 0.6rem;
+		}
+	}
+
+}

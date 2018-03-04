@@ -20,12 +20,12 @@
       Akun Saya
     </ion-list-header>
 
-    <ion-item>
+    <ion-item (click)="gotoProfil()" >
       <ion-icon name='person' item-start></ion-icon>
       Profil Saya
     </ion-item>
 
-    <ion-item>
+    <ion-item (click)="gotoStatus()">
       <ion-icon name='information-circle' item-start></ion-icon>
         Status Akun
     </ion-item>
@@ -39,19 +39,19 @@
       Aplikasi
     </ion-list-header>
 
-    <ion-item>
+    <!-- <ion-item (click)="gotoTema()">
       Warna Tema
       <ion-icon name='color-palette' item-start></ion-icon>
       <ion-note item-end>Standar</ion-note>
-    </ion-item>
+    </ion-item> -->
 
-    <ion-item>
-      Kota Sekarang
+    <ion-item (click)="gotoPerjalanan()">
+      Perjalanan
       <ion-icon name='pin' item-start></ion-icon>
       <ion-note item-end>DKI Jakarta</ion-note>
     </ion-item>
 
-    <ion-item>
+    <ion-item (click)="gotoFiqh()">
       Fiqh Safar
       <ion-icon name='hammer' item-start></ion-icon>
       <ion-note item-end>Fatwa MUI</ion-note>
@@ -65,12 +65,12 @@
       Pengembangan Kami
     </ion-list-header>
 
-    <ion-item>
+    <ion-item (click)="gotoDonasi()">
       Donasi
       <ion-icon name='cube' item-start></ion-icon>
     </ion-item>
 
-    <ion-item>
+    <ion-item (click)="gotoIklan()">
     	Hapus Iklan
       <ion-icon name='paper' item-start></ion-icon>
     </ion-item>
@@ -83,12 +83,12 @@
       Kebijakan
     </ion-list-header>
 
-    <ion-item>
+    <ion-item (click)="gotoTentang()">
       Tentang Kami
       <ion-icon name='information-circle' item-start></ion-icon>
     </ion-item>
 
-    <ion-item>
+    <ion-item (click)="gotoKebijakan()">
     	Aturan Dan Kebijakan Aplikasi
       <ion-icon name='clipboard' item-start></ion-icon>
     </ion-item>

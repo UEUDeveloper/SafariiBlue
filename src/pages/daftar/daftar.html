@@ -1,0 +1,75 @@
+<!--
+  Generated template for the DaftarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>Daftar</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content padding>
+	<!-- header -->
+	<ion-grid class="daftar-header">
+		<ion-row>
+			<ion-col col-12 class="daftar-header-img">
+				<img src="assets/imgs/logo2.jpg">
+			</ion-col>
+			<ion-col col-12>
+				<h1>SAFARII</h1>
+				<p>Panduan Sholat Dalam Perjalanan</p>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<!-- end header -->
+
+	<!-- body -->
+	<ion-grid class="daftar-body">
+		<ion-row>
+			<ion-col col-12>
+				<h1>DAFTAR</h1>
+
+					<ion-list no-lines>
+						<ion-item>
+							<ion-input type="text" placeholder="Nama ..."></ion-input>
+						</ion-item>
+
+						<ion-item>
+							<ion-input type="text" placeholder="No. HP ..."></ion-input>
+						</ion-item>
+
+						<ion-item>
+							<ion-input type="text" placeholder="Email ..."></ion-input>
+						</ion-item>
+
+						<ion-item>
+							<ion-input type="password" placeholder="Password ..."></ion-input>
+						</ion-item>
+						<ion-item>
+							<a href="#">Baca Kebijakan Aplikasi Safarii</a>
+						</ion-item>
+						<ion-item>
+						  <ion-label>Setuju kepada kebijakan kami</ion-label>
+						  <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+						</ion-item>
+						<ion-item class="daftar-body-button">
+							<button ion-button block color="secondary">DAFTAR</button>
+						</ion-item>	
+					</ion-list>
+
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<!-- end body -->
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title>Sudah Punya Akun ? <a href="#" (click)="gotoLogin()" text-wrap>LOGIN</a></ion-title>
+  </ion-toolbar>
+</ion-footer>

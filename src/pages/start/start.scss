@@ -1,0 +1,61 @@
+page-start {
+    font-family: 'SourceSansPro';
+	ion-content{
+		background:map-get($colors, primary) !important;
+	}
+	.start-layer{
+		background:url('../assets/imgs/bgalus.png') no-repeat;
+		background-size:100% 100%;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:-1;
+		opacity:0.5;
+	}
+	.star-header{
+		text-align:center;
+		margin-top:3rem;
+		img{
+			border-radius:13rem;
+			width:23rem;
+			height:23rem;
+			margin-bottom:0;
+		}
+		h1{
+			letter-spacing:0.3em;
+			color:#FFF;
+			font-size:3em;
+			font-weight:bold;
+			margin-left:0.2em;
+			margin-top:0;
+    		text-shadow: 1px 0px #FFF, 1px 1px 1px #999;
+		}
+		h5{
+			margin-top:0;
+			margin-left:0;
+			color:#F5F5F5;
+		}
+		button{
+			box-shadow:none;
+			font-weight:bold;
+			font-size:1.8rem;
+			border-radius:0.6rem;
+			padding:2.5rem;
+			width:80%
+		}
+		.btn-login{
+			border-right:1px solid #FFF;
+		}
+		.star-header-img{
+			margin-bottom:0;
+		}
+		.star-header-button{
+			margin-top:5rem;
+			h4{
+				color:#FFF;
+			}
+		}
+	}
+}

@@ -42,13 +42,15 @@ $app-direction: ltr;
 // );
 
 $colors: (
-  primary:    #00CCFF,
-  secondary:  #1E824C,
-  danger:     #f53d3d,
+  primary:    #3498DB,
+  secondary:  #1abc9c,
+  danger:     #e74c3c,
+  warning:    #f39c12,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  gray:       #666
 );
-
+$app-direction: multi;
 
 // App iOS Variables
 // --------------------------------------------------
@@ -80,7 +82,7 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
+$searchbar-md-background-color : map-get($colors, primary);
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
@@ -92,5 +94,6 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
+// @import "roboto";
 @import "roboto";
 @import "noto-sans";

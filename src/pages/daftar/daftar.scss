@@ -1,0 +1,100 @@
+page-daftar {
+    font-family: 'SourceSansPro';
+	.daftar-header{
+		margin-bottom:1.5rem;
+		ion-col{
+			text-align:center;
+		}
+		.daftar-header-img{
+			img{
+				width:14rem;
+				height: 14rem;
+				border-radius: 7rem;
+			}
+		}
+		h1{
+			color:map-get($colors, primary);
+			font-weight:bold;
+			font-size:3rem;
+			letter-spacing:0.3em;
+    		text-shadow: 2px 0px map-get($colors, primary);
+			margin-bottom:0.5rem;
+		}
+		p{
+			font-size:1.6rem;
+			color:#666;
+			border-bottom:2px solid #CCC;
+			padding-bottom:1rem;
+			display:inline !important;
+		}
+	}
+	.daftar-body{
+		ion-col{
+			text-align:center;
+		}
+		h1{
+			color:map-get($colors, gray);
+			font-weight:bold;
+			font-size:2.3rem;
+			margin-bottom:0.5rem;
+    		text-shadow: 1px 0px map-get($colors, gray);
+			letter-spacing:0.1em;
+		}
+		ion-input{
+			border:1px solid #CCC;
+			margin-top:1rem;
+			margin-bottom:1rem;
+			border-radius:0.6rem;
+			margin-right:8px;
+		}
+		.list-md .item-input:last-child{
+			border-bottom:none;
+		}
+		.list-ios .item-input:last-child{
+			border-bottom:none;
+		}
+		.daftar-body-button{
+			padding-right:0;
+		}
+		.item-md .item-button{
+			font-weight:bold;
+			font-size:1.8rem;
+			border-radius:0.6rem;
+			padding:2rem 0.6rem;
+			margin-right:0;
+		}
+		.item-ios .item-button{
+			font-weight:bold;
+			font-size:1.8rem;
+			border-radius:0.6rem;
+			padding:2rem 0.6rem;
+			margin-right:0;
+		}
+		.daftar-body-lupa{
+			text-align:center;
+		}
+		.daftar-body-lupa a{
+			font-size: 1.8rem;
+			text-decoration:none;
+		}
+	}
+	ion-toolbar{
+		text-align:center;
+		.toolbar-title-md{
+			font-size: 1.8rem;
+			a{
+				font-weight:bold;
+				color: map-get($colors, warning);
+				text-decoration:none;
+			}
+		}
+		.toolbar-title-ios{
+			font-size: 1.6rem;
+			a{
+				font-weight:bold;
+				color: map-get($colors, warning);
+				text-decoration:none;
+			}
+		}
+	}
+}
